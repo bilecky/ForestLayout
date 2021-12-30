@@ -40,14 +40,14 @@ a {
 }
 .nav__link {
 	position: relative;
-		/* display: inline-block; */
-		margin: 0.5em;
-		padding: 0.5em;
-		font-size: 2.3rem;
-		text-decoration: none;
-		text-transform: uppercase;
-		color: white;
-		transition: color 0.3s;
+	/* display: inline-block; */
+	margin: 0.5em;
+	padding: 0.5em;
+	font-size: 2.3rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	transition: color 0.3s;
 }
 
 .nav-mobile {
@@ -67,6 +67,7 @@ a {
 }
 .nav-mobile--active {
 	transform: translateX(0);
+	color: white;
 }
 
 header {
@@ -80,8 +81,6 @@ header {
 }
 
 .navbar {
-	height: 0%;
-	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
@@ -104,10 +103,13 @@ header {
 	align-items: center;
 }
 .header__text {
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-content: center;
-	margin-left: 5%;
+	align-items: flex-start;
+	padding: 1em;
+	width: 100%;
+	overflow: hidden;
 	color: white;
 	z-index: 3;
 }
@@ -138,11 +140,11 @@ header {
 }
 
 h2.section-text {
-	font-size: 3rem;
+	font-size: 4rem;
 }
 
 .section-padding {
-	padding: 6em 2em;
+	padding: 5em 2em;
 }
 .aboutus__box {
 	display: flex;
@@ -153,8 +155,13 @@ h2.section-text {
 	margin-bottom: 1em;
 }
 .aboutus__title {
+	font-size: 3rem;
 	margin-bottom: 0.5em;
 	font-weight: 600;
+}
+.aboutus__text {
+	font-size: 2rem;
+	line-height: 155%;
 }
 
 .hero-img {
@@ -229,7 +236,7 @@ li {
 	display: none;
 }
 
-.footer{
+.footer {
 	background-color: rgb(247, 232, 232);
 	color: rgb(78, 77, 74);
 }
@@ -246,4 +253,68 @@ li {
 .footer__bottom-text {
 	padding: 2em;
 	text-align: center;
+}
+
+@media (min-width: 992px) {
+	.aboutus__box {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.aboutus__box-text {
+		width: 55%;
+	}
+	.aboutus__box-img {
+		width: 42%;
+	}
+	.offers__cards {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.offers__box {
+		margin: 2em;
+	}
+	.footer__boxes {
+		display: flex;
+		justify-content: space-between;
+	}
+	.footer__box-desktop {
+		display: block;
+	}
+	.footer__box {
+		margin: 0 2em;
+		text-align: center;
+	}
+	.footer__box a {
+		list-style: none;
+		text-decoration: none;
+		color: black;
+	}
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+	.hamburger {
+		display: none;
+	}
+	.nav-desktop {
+		display: flex;
+		justify-content: space-between;
+		width: 50%;
+	}
+	.nav__link {
+		color: black;
+		padding: 0 1em;
+		margin: 0;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+	.nav__link:hover {
+		background-color: black;
+		color: white;
+		overflow: visible;
+		box-sizing: border-box;
+	}
 }
