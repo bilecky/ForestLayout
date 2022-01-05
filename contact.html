@@ -20,21 +20,20 @@
 </head>
 
 <body>
-
     <header class="header ">
-        <div class="navbar">
+        <div class="navbar wrapper">
             <button class="hamburger hamburger--3dx
         " type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
-            <a href="#home" class="brandname"><i class="fas fa-tree"></i> Forest Park</a>
+            <a href="index.html" class="brandname"><i class="fas fa-tree"></i> Forest Park</a>
 
             <nav class="nav nav-mobile ">
-                <a class="nav__link" href="index.html">Home</a>
+                <a class="nav__link" href="#home">Home</a>
 
-                <a class="nav__link" href="index.html#aboutus">O nas</a>
+                <a class="nav__link" href="#aboutus">O nas</a>
                 <a class="nav__link" href="#offer">Oferta</a>
                 <a class="nav__link" href="contact.html">Kontakt</a>
 
@@ -44,13 +43,13 @@
                 <a class="nav__link" href="#home">Home</a>
                 <a class="nav__link" href="#aboutus">O nas</a>
                 <a class="nav__link" href="#offer">Oferta</a>
-                <a class="nav__link" href="#contact">Kontakt</a>
+                <a class="nav__link" href="contact.html">Kontakt</a>
 
             </nav>
         </div>
-        <div class="header__box">
+        <div class="header__box ">
             <div class="header__text wrapper">
-                <h1 class="company-name">Forest Park</h1>
+                <h1 class="company-name ">Forest Park</h1>
                 <p>Najpiękniejszy park w twojej okolicy</p>
             </div>
             <div class="header__shadow"></div>
@@ -60,28 +59,71 @@
     </header>
 
     <main class="main">
-        <section class="aboutus section-padding" id="aboutus">
+        <section class="form section-padding" id="form">
             <div class="wrapper">
                 <h2 class="section-text">Formularz kontaktowy</h2>
-                <div class="aboutus__box">
-                    <div class="aboutus__box-img">
-                        <img src="waters.jpg" alt="water" class="aboutus__img">
+                <form action="" class="contact__form">
+
+                    <div class="contact__form-top">
+                        <label for="name" class="contact__form-label">Imię i nazwisko:</label>
+                        <input id="name" type="text" class="contact__form-input">
+
+                        <label for="email" class="contact__form-label">Adres e-mail:</label>
+                        <input id="email" type="text" class="contact__form-input">
                     </div>
-                    <div class="aboutus__box-text">
-                        <h3 class="aboutus__title">Niezapomniane przygody</h3>
-                        <p class="aboutus__text">formularz</p>
-                    </div>
-                </div>
+                    <label for="msg" class="contact__form-label">Wiadomość:</label>
+                    <textarea id="msg" class="contact__form-textarea"></textarea>
+                    <button type="submit" class="contact__form-btn btn-special-animation">Wyślij</button>
+                </form>
+                <iframe class="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39428.71691584533!2d19.359264409936486!3d51.8555735150514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bb5d3c9c6be47%3A0xa0c35792350c40e0!2s95-100%20Zgierz!5e0!3m2!1spl!2spl!4v1640894834429!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>
 
-       </main>
+    </main>
 
 
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__boxes">
+                <h3 class="footer__box-title"><i class="fas fa-tree"></i>Forest Park</h3>
 
+                <div class="footer__box footer__box-desktop">
+
+                    <h3 class="footer__box-title">O nas</h3>
+                    <ul class="footer__box-list">
+                        <li class="footer__box-list-item"><a href="#">Historia</a></li>
+                        <li class="footer__box-list-item"><a href="#">Parki</a></li>
+                        <li class="footer__box-list-item"><a href="#">Opinie</a></li>
+                    </ul>
+                </div>
+                <div class="footer__box footer__box-desktop">
+
+                    <h3 class="footer__box-title">Nasza firma</h3>
+                    <ul class="footer__box-list">
+                        <li class="footer__box-list-item"><a href="#">O nas</a></li>
+                        <li class="footer__box-list-item"><a href="#">Zespół</a></li>
+                        <li class="footer__box-list-item"><a href="#">Kariera</a></li>
+                        <li class="footer__box-list-item"><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer__box footer__box-desktop">
+
+                    <h3 class="footer__box-title">Dokumenty</h3>
+                    <ul class="footer__box-list">
+                        <li class="footer__box-list-item"><a href="#">Wnioski</a></li>
+                        <li class="footer__box-list-item"><a href="#">Rezerwacje</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <p class="footer__bottom-text"> &copy; 2021 Forest Group Company Ltd</p>
+    </footer>
 
 
     <script src="main.js"></script>
+
 </body>
 
 </html>
